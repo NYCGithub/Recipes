@@ -36,7 +36,7 @@ def searchLeftBoundary(nums, target):
             end = mid -1
         elif target > nums[mid]:
             start = mid + 1
-        if target >= nums[mid]:
+        if target == nums[mid]:
             index = mid
     if index is not None:
         return index
